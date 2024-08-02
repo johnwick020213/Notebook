@@ -31,7 +31,7 @@ TCP 协议是 <span style="color:#FF0000;"> **面向连接的** </span>，**<spa
    - TCP是流式传输，没有边界，但保证顺序和可靠。
    - UDP是一个包一个包的发送，是有边界的，但可能会丢包和乱序。
 
-7. <span style="color:#0000FF; font-weight:bold;">分片不同</span>
+7. <span style="color:#0000FF; font-weight:bold;">分片不同</span>*
    - TCP数据如果大于MSS大小，则会在传输层进行分片，目标主句收到后，也会同样在传输层组装TCP数据包。如果中途丢失一个分片，只需要传输丢失分片。
    - UDP的数据大小大于MTU大小，则会在IP层进行分片，目标主机收到后，在IP层组装完数据，接着再传给传输层。
 
